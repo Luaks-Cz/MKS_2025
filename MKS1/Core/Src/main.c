@@ -104,16 +104,6 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  /*for (int i = 0; i <3; i++){
-		  LL_GPIO_SetOutputPin(LD2_GPIO_Port, LD2_Pin);
-		  for (int j = 0; j <sos[i]; j++){
-			  LL_mDelay(100);
-		  }
-		  LL_GPIO_ResetOutputPin(LD2_GPIO_Port, LD2_Pin);
-		  LL_mDelay(200);
-	  }
-	  LL_mDelay(500);*/
-	  	  	  	     //0b1111100111111111100111110000000;
 	  uint32_t pos = 0b1000000000000000000000000000000;
 	  for (int i = 0; i <32; i++){
 		  if ((sos2>>i) & 1){
@@ -122,12 +112,10 @@ int main(void)
 		  }else{
 			  LL_GPIO_ResetOutputPin(LD2_GPIO_Port, LD2_Pin);
 			  LL_mDelay(100);
-
 		  }
 		  pos = pos>>1;
 		  LL_mDelay(100);
 	  }
-
   }
   /* USER CODE END 3 */
 }

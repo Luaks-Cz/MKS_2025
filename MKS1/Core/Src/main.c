@@ -122,8 +122,7 @@ int main(void)
 			  LL_mDelay(100);
 		  }else{
 			  LL_GPIO_ResetOutputPin(LD2_GPIO_Port, LD2_Pin);
-			  LL_mDelay(100);
-			  LL_mDelay(100);
+			  LL_mDelay(200);
 		  }
 		  pos = pos>>1;
 		  LL_mDelay(100);

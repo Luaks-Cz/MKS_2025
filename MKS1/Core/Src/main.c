@@ -98,6 +98,7 @@ int main(void)
   uint8_t sos[] = {5, 10, 5};
 
   uint32_t sos2 = 0b10101001110111011100101010000000;
+  char message = {'S', 'O', 'S'};//ss
   while (1)
   {
     /* USER CODE END WHILE */
@@ -115,14 +116,13 @@ int main(void)
 	  	  	  	     //0b1111100111111111100111110000000;
 	  uint32_t pos = 0b1000000000000000000000000000000;
 	  for (int i = 0; i <32; i++){
-		  if (pos & sos2){
+		  if ((sos2>>i) & 1){
 			  LL_GPIO_SetOutputPin(LD2_GPIO_Port, LD2_Pin);
-			  LL_mDelay(100);
-			  LL_GPIO_ResetOutputPin(LD2_GPIO_Port, LD2_Pin);
 			  LL_mDelay(100);
 		  }else{
 			  LL_GPIO_ResetOutputPin(LD2_GPIO_Port, LD2_Pin);
-			  LL_mDelay(200);
+			  LL_mDelay(100);
+
 		  }
 		  pos = pos>>1;
 		  LL_mDelay(100);

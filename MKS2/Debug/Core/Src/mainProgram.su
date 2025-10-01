@@ -1,0 +1,11 @@
+../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_cortex.h:136:22:LL_SYSTICK_EnableIT	8	static
+../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h:757:26:LL_GPIO_IsInputPinSet	16	static
+../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h:769:22:LL_GPIO_WriteOutputPort	16	static
+../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h:838:22:LL_GPIO_SetOutputPin	16	static
+../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h:867:22:LL_GPIO_ResetOutputPin	16	static
+../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h:896:22:LL_GPIO_TogglePin	24	static
+../Core/Src/mainProgram.c:27:6:mainLoop	16	static
+../Core/Src/mainProgram.c:55:6:button2	16	static
+../Core/Src/mainProgram.c:76:6:button1	16	static
+../Core/Src/mainProgram.c:114:6:tick	8	static
+../Core/Src/mainProgram.c:117:6:togglePinEXTI	8	static

@@ -29,9 +29,9 @@ Core/Src/mainProgramFile.o: ../Core/Src/mainProgramFile.c \
  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h \
  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h \
  ../Core/Inc/mainProgramFile.h \
- C:/Users/Luaks/Documents/GitHub/MKS_2025/MKS4/Core/libraries/basicUtil.h \
+ C:/Temp/mlcoch/MKS_2025/MKS4/Core/libraries/basicUtil.h \
  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h \
- C:/Users/Luaks/Documents/GitHub/MKS_2025/MKS4/Core/libraries/sct.h
+ C:/Temp/mlcoch/MKS_2025/MKS4/Core/libraries/sct.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:
 ../Core/Inc/stm32f0xx_hal_conf.h:
@@ -63,6 +63,6 @@ Core/Src/mainProgramFile.o: ../Core/Src/mainProgramFile.c \
 ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h:
 ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h:
 ../Core/Inc/mainProgramFile.h:
-C:/Users/Luaks/Documents/GitHub/MKS_2025/MKS4/Core/libraries/basicUtil.h:
+C:/Temp/mlcoch/MKS_2025/MKS4/Core/libraries/basicUtil.h:
 ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h:
-C:/Users/Luaks/Documents/GitHub/MKS_2025/MKS4/Core/libraries/sct.h:
+C:/Temp/mlcoch/MKS_2025/MKS4/Core/libraries/sct.h:

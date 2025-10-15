@@ -1,1 +1,2 @@
-../Core/Src/mainProgramFile.c:21:6:mainProgramLoop	1
+../Core/Src/mainProgramFile.c:32:6:mainProgramLoop	10
+../Core/Src/mainProgramFile.c:88:6:HAL_ADC_ConvCpltCallback	2

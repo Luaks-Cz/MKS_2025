@@ -18,5 +18,6 @@ typedef struct{
 uint8_t sct_init();
 uint8_t sct_led(uint32_t value);
 uint8_t sct_value(uint16_t value);
+uint8_t sct_valuePlus(uint16_t value, uint8_t led);
 
 #endif /* LIBRARIES_SCT_H_ */

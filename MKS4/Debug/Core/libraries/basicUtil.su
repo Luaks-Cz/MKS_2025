@@ -1,0 +1,2 @@
+../Core/libraries/basicUtil.c:12:11:setPinStruct	32	static
+../Core/libraries/basicUtil.c:22:6:writeToPin	32	static

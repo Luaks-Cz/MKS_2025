@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;MKS4/MKS3 Debug.launch&apos;" deleteContents="false" description="Delete resource &apos;MKS4/MKS3 Debug.launch&apos;" element1="/MKS4/MKS3 Debug.launch" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1760513209411"/>
+</session>

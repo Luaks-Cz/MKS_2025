@@ -1,0 +1,48 @@
+/*
+ * mainProgramFile.c
+ *
+ *  Created on: Jul 18, 2025
+ *      Author: Luaks
+ */
+#include "main.h"
+//#include "stm32f0xx_ll_gpio.h"
+#include "string.h"
+#include <ctype.h>
+
+#include "mainProgramFile.h"
+#include "basicUtil.h"
+#include "sct.h"
+
+int stav = 0;
+uint16_t test = 0;
+
+uint32_t rawADCData = 0;
+uint_t adcDoneFlag = 0;
+void mainProgramLoop(void)
+{
+
+	sct_init();
+	sct_led(0x7A5C36DE);
+
+	HAL_ADCEx_Calibration_Start(&hadc);
+	HAL_ADC_Start_DMA(&hadc, (uint32_t*)rawADCData, 1);
+
+	HAL_Delay(1000);
+
+	while(1){
+		if (adcDoneFlag){
+
+			uint16_t displayVal = (500.0/4095.0)*rawADCData;
+			sct_value(displayVal);
+			adcDoneFlag = 0;
+		}
+	}
+
+}
+
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc){
+
+	HAL_ADC_Start_DMA(&hadc, (uint32_t*)rawADCData, 1);
+	adcDoneFlag = 1;
+}
+

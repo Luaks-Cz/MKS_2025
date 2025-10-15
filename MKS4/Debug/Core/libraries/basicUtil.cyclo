@@ -1,0 +1,2 @@
+../Core/libraries/basicUtil.c:12:11:setPinStruct	1
+../Core/libraries/basicUtil.c:22:6:writeToPin	1
